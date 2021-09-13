@@ -24,7 +24,7 @@ const showProducts = (products) => {
       <h3>${product.title}</h3>
       <p>Category: ${product.category}</p>
       <h2>Price:  ${product.price}</h2>
-      <h4 class='p-rate'> Product Rating: ${product.rating.count}</h4>
+      <h4 class='p-rate'> Total People's Rating: ${product.rating.count}</h4>
       <h5 class='avg-rate'> Average Rating: ${product.rating.rate} </h5>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
       <button id="details-btn" class="btn btn-danger">Details</button></div>
@@ -70,21 +70,17 @@ const updateTaxAndCharge = () => {
   if (priceConverted > 200) {
     setInnerText("delivery-charge", 30);
     setInnerText("total-tax", priceConverted * 0.2);
-    // setInnerText("total-tax", priceConverted.toFixed(2));
   }
   if (priceConverted > 400) {
     setInnerText("delivery-charge", 50);
     setInnerText("total-tax", priceConverted * 0.3);
-    // setInnerText("total-tax", priceConverted.toFixed(2));
   }
   if (priceConverted > 500) {
     setInnerText("delivery-charge", 60);
     setInnerText("total-tax", priceConverted * 0.4);
-    // setInnerText("total-tax", priceConverted.toFixed(2))
   }
   console.log(priceConverted)
   
-  // document.getElementById('total-tax').innerText =priceConverted.toFixed(2);
 };
 
 
