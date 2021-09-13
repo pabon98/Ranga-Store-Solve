@@ -61,10 +61,10 @@ body {
 .cart-main {
   padding-right: 30px;
 }
-.p-rate{
+.p-rate {
   color: rgb(140, 140, 247);
 }
-.avg-rate{
+.avg-rate {
   color: rgb(219, 80, 29);
 }
 @media only screen and (max-width: 768px) {
